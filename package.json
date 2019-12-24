@@ -1,0 +1,29 @@
+{
+  "name": "learning-js-v2",
+  "version": "1.0.0",
+  "description": "= Learning JavaScript, 3rd Edition == Chapter 2: JavaScript Development Tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devinan/learning-js-v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devinan/learning-js-v2/issues"
+  },
+  "homepage": "https://github.com/devinan/learning-js-v2#readme",
+  "dependencies": {
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-eslint": "^6.0.0"
+  }
+}
