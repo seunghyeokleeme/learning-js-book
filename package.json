@@ -1,0 +1,15 @@
+{
+  "name": "learning-js-v3",
+  "version": "1.0.0",
+  "description": "= Learning JavaScript, 3rd Edition == Chapter 2: JavaScript Development Tools",
+  "dependencies": {
+    "underscore": "^1.9.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^7.0.1",
+    "gulp-eslint": "^6.0.0"
+  }
+}
