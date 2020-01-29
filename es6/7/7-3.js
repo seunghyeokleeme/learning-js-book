@@ -42,9 +42,3 @@ function getBirthYear(user2) {
   return new Date().getFullYear - user2.age;
 }
 // 이 함수들은 모든 스코프에서 호출합니다.
-
-let a = 25;
-
-function a(b) {
-  console.log(b);
-}
