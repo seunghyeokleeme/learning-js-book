@@ -44,3 +44,42 @@ const alphabetical = words.reduce((a, x) => {
   a[x[0]].push(x);
   return a;
 }, {});
+
+// 배열의 모든요소에서 콜백함수는 전단계의 결과에 이 단어의 첫글자의 프로퍼터가 있는지 확인합니다.
+
+// reduce는 통계에서도 사용할수 있습니다. 예를 들어 데이터 셋의 평균과 분산을 계산하는 예제
+const data = [3.3, 5, 7.2, 12, 4, 6, 10.3];
+const stats = data.reduce(
+  (a, x) => {
+    a.N++;
+    let delta = x - a.mean;
+    a.mean += delta / a.N;
+    a.M2 += delta * (x - a.maen);
+    return a;
+  },
+  { N: 0, mean: 0, M2: 0 }
+);
+if (stats.N > 2) {
+  stats.variance = stats.M2 / (stats.N - 1);
+  stats.stdev = Math.sqrt(stats.variance);
+}
+
+// reduce의 유연성을 알아보기 위해 사용한 예제
+const words = [
+  "Beachball",
+  "Rodeo",
+  "Angel",
+  "Aardvark",
+  "Xylophone",
+  "November",
+  "Chocolate",
+  "Papaya",
+  "Uniform",
+  "Joker",
+  "Clover",
+  "Bali"
+];
+const longWords = words
+  .reduce((a, w) => (w.length > 6 ? a + " " + w : a), "")
+  .trim();
+const test = words.filter(x => x.length > 6).join(" ");
