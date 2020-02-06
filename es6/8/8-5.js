@@ -65,7 +65,7 @@ if (stats.N > 2) {
 }
 
 // reduce의 유연성을 알아보기 위해 사용한 예제
-const words = [
+const words1 = [
   "Beachball",
   "Rodeo",
   "Angel",
@@ -79,7 +79,7 @@ const words = [
   "Clover",
   "Bali"
 ];
-const longWords = words
+const longWords = words1
   .reduce((a, w) => (w.length > 6 ? a + " " + w : a), "")
   .trim();
-const test = words.filter(x => x.length > 6).join(" ");
+const test = words1.filter(x => x.length > 6).join(" ");

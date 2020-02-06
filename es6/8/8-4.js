@@ -47,9 +47,9 @@ cards.filter(c => c.value > 10);
 cards.filter(c => c.value > 10 && c.suit === "H");
 
 // map과 filter 결합의 예제
-const cards = [];
+const cards1 = [];
 for (let suit of ["H", "C", "D", "S"]) // 하트, 클로버, 다이아몬드, 스페이드
-  for (let value = 1; value <= 13; value++) cards.push({ suit, value });
+  for (let value = 1; value <= 13; value++) cards1.push({ suit, value });
 
 function cardToString(c) {
   const suits = { H: "\u2665", c: "\u2663", D: "\u2666", S: "\u2660" };
@@ -59,7 +59,7 @@ function cardToString(c) {
 }
 
 // value가 2인 카드
-cards.filter(c => value === 2).map(cardToString); //(4) ["2♥", "2♣", "2♦", "2♠"]
+cards1.filter(c => value === 2).map(cardToString); //(4) ["2♥", "2♣", "2♦", "2♠"]
 
 // 하트의 킹, 퀸, 주니어
-cards.filter(c => c.value > 10 && c.suit === "H").map(cardToString);
+cards1.filter(c => c.value > 10 && c.suit === "H").map(cardToString);
